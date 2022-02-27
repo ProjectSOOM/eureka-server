@@ -1,18 +1,18 @@
 server:
-  port: ${SERVER_PORT}
-  address: ${SERVER_ADDRESS}
+  port: ${EUREKA_SERVER_PORT}
+  address: ${EUREKA_SERVER_ADDRESS}
   shutdown: graceful
 spring:
   application:
     name: eureka-server
 eureka:
   instance:
-    hostname: ${SERVER_ADDRESS}
+    hostname: ${EUREKA_SERVER_ADDRESS}
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: ${SERVER_PROTOCOL}://${SERVER_ADDRESS}:${SERVER_PORT}/eureka
+      defaultZone: ${EUREKA_SERVER_ADDRESS}:${EUREKA_SERVER_PORT}/eureka
 
   server:
     enable-self-preservation: false

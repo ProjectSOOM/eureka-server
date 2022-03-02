@@ -5,4 +5,5 @@
 |---|---|
 | EUREKA_SERVER_PORT | EurekaServer 의 포트번호 |
 | EUREKA_SERVER_ADDRESS | EurekaServer 의 호스트이름 혹은 ip주소 |
-| EUREKA_SERVER_PROTOCOL | EurekaServer 의 프로토콜 종류 (http/https) |
+| EUREKA_SERVER_HOSTNAME | EurekaServer 의 호스트이름(for instance) |
+| EUREKA_SERVER_DEFAULT_ZONE | EurekaServer Default Zone |
